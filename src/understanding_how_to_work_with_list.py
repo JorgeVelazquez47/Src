@@ -35,3 +35,11 @@ numbers = list(range(1,6))
 print(numbers)
 numbers_ev = list(range(2,11,2))
 print(numbers_ev)
+
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+
+squares = [value**2 for value in range(1,11)]
+print(squares)
