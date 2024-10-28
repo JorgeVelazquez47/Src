@@ -89,3 +89,26 @@ print()
 
 for lenguaje in set(programming_lenguages.values()):
     print(lenguaje)
+
+
+"""
+Nesting - Diccionaries in list
+"""
+chevy_silverado= {'color':'blue','puntos':10}
+chevy_camaro = {'color':'rojo','puntos':10}
+chevy_corvette = {'color':'blanco', 'puntos':10}
+chevys = [chevy_silverado, chevy_camaro, chevy_corvette]
+print("Chevys:")
+print(chevys)
+
+for chevy in chevys:
+    print(chevy)
+cheys_fleet= []
+for _ in range (30):
+    new_chevys={'color':'negro','puntos':10}
+    
+tacos = {
+    "tortillas": ['harina','maiz'],
+    "guisos":['bistek','tripa','pastor']
+}
+print(f"Tu has ordenado unos tacos de {tacos['guisos'][2]} con tortilla de {tacos['tortillas'][0]}")
