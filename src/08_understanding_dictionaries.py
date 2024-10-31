@@ -112,3 +112,17 @@ tacos = {
     "guisos":['bistek','tripa','pastor']
 }
 print(f"Tu has ordenado unos tacos de {tacos['guisos'][2]} con tortilla de {tacos['tortillas'][0]}")
+
+print("-------------------------------------")
+users= {
+    "Eltortas":{
+        "firstname": "Uvaldo",
+        "lastname":"Martinez",
+        "age":18,
+        "altura": 170,
+    }
+}
+for user, user_info in users.items():
+    print(user)
+    full_name = user_info["firstname"]+ " " + user_info["lastname"]
+    print("\t",full_name,"tiene", f"{user_info['age']}años","y mide: " + f"{user_info['altura']} cm")
