@@ -5,14 +5,15 @@ del ususario
 input(argumento)-> string
 """
 
-inicio = input("Presiona enter: ")
-if inicio == "":
-    print(inicio)
-
-else:
+while True:
     inicio = input("Presiona enter: ")
-prompt = "Introduce tu nombre:"
-name = input(prompt)
+    
+    if inicio == "":
+        break  
+    else:
+        print("Comando no reconocido")
+nombre_completo = "Introduce tu nombre:"
+name = input(nombre_completo)
 print(f"¡Bienvenid@! {name.title().lstrip()}")
 
 while True:
@@ -27,7 +28,7 @@ while True:
 
             else:
                 print("Eres menor de edad.")
-            break  # Salir del bucle si la entrada es válida y se ha dado una respuesta
+            break 
         except ValueError:
             print("Entrada no válida. Por favor, ingresa un número entero.")
 gustos="Que te gusta hacer en tu tiempo libre?"
