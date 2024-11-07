@@ -362,3 +362,34 @@ if 'sandia' in frutas_favoritas:
             Si se ha usado 'Juan', no se debe aceptar 'JUAN'.
 
 """
+print("---------------EJERCICIO---------------")
+
+usuarios = ['admin', 'Jorge', 'Uvaldo', 'Jose', 'Orly']
+for usuario in usuarios:
+    if usuario == 'admin':
+        print("Hola admin, ¿Como te encuentras?")
+    else:
+        print(f"Hola {usuario.title()}, bienvenido")
+print("---------------EJERCICIO 2---------------")
+usuarios = []
+if usuarios:
+    for usuario in usuarios:
+        if usuario == 'admin':
+            print("Hola admin,  ¿Como te encuentras?")
+        else:
+            print(f"Hola {usuario.title()}, bienvenido")
+else:
+    print("¡Necesitamos encontrar algunos usuarios!")
+
+print("---------------EJERCICIO 3---------------")
+usuarios = ['derik', 'jorge', 'uvaldo', 'jose', 'orly']
+
+nuevos_usuarios = ['charly', 'UVALDO', 'mercury', 'josefa', 'ORLY']
+
+usuario = [usuario.lower() for usuario in usuarios]
+
+for nuevo_usuario in nuevos_usuarios:
+    if nuevo_usuario.lower() in usuario:
+        print(f"El nombre de usuario '{nuevo_usuario}' esta en uso elige otro nombre.")
+    else:
+        print(f"El nombre de usuario '{nuevo_usuario}' esta disponible.")

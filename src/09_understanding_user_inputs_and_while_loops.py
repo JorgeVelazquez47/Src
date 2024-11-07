@@ -1,43 +1,74 @@
 """
-User Inputs
-El metodo buil-in input permite obtener informacion 
-del ususario
-input(argumento)-> string
+
+    User Inputs
+
+    El método built-in input permite obtener información
+    del usuario.
+    
+    input(prompt) -> string
+
 """
 
-while True:
-    inicio = input("Presiona enter: ")
+message = input("Escribe algo, y lo reimprimiré de nuevo para ti: ")
+print(message)
+print(type(message))
+
+# Prompt para pedir un string
+prompt = " Introduce tu nombre: " 
+message = input(prompt)
+print(message)
+
+# Prompt para pedir un número
+prompt = "¿Cuál es tu edad?: "
+age = int(input(prompt))
+print(age)
+print(type(age))
+print(age>=18)
+
+
+"""
+
+    Operador Módulo
     
-    if inicio == "":
-        break  
-    else:
-        print("Comando no reconocido")
-nombre_completo = "Introduce tu nombre:"
-name = input(nombre_completo)
-print(f"¡Bienvenid@! {name.title().lstrip()}")
+"""
 
-while True:
-        try:
-            edad = int(input("Por favor, ingresa tu edad: "))
-            
-            if edad >= 18:
-                print("Eres mayor de edad.")
-                ciudad = "Introduce tu ciudad:"
-                city = input(ciudad)
-                print(f"Ciudad de origen {city.title().lstrip()}")
-
-            else:
-                print("Eres menor de edad.")
-            break 
-        except ValueError:
-            print("Entrada no válida. Por favor, ingresa un número entero.")
-gustos="Que te gusta hacer en tu tiempo libre?"
-pasatiempo = input(gustos)
-print(f"En mis tiempos libres me gusta {pasatiempo.lower().lstrip()}")
-estudios = input("Estudias actualmente?")
-if estudios.lower() == 'si':
-     print ("Excelente")
-     where= input("Donde estudias actualmente?:")
-     print(f"Muy bien actualmente estudias en {where}")
+print(4%3)
+print(5%3)
+print(6%3)
+par_impar = "Introduce un número para decirte si es par o impar: "
+number = int(input(par_impar))
+if number%2==0:
+    print(number, "es par.")
 else:
-     print("Pongase a estudiar ")
+    print(number, "es impar.")
+
+
+"""
+
+    While Loop
+    
+"""
+import time
+
+contador = 0
+
+while contador < 5:
+    print("Charly")
+    time.sleep(0.1)
+    contador += 1
+
+message = ""
+while message != 'salir':
+    message = input("Si quiere salir, tipea salir: ")
+    print(message)
+   
+    
+while True: 
+    print("Alan")
+    print("Chema")
+    prompt = "¿Quieres imprimir otro nombre?, escríbelo." +\
+        "si quieres salir , tipea quit: "
+    message = input(prompt)
+    if message == 'quit' or message == 'exit' or message == 'salir':
+        break
+    print(message)
