@@ -31,6 +31,7 @@ Ejercicio.
     Luego cambia el valor de la variable a otro mensaje 
     e imprime el nuevo mensaje
     """
+print("EJERCICIO 1")
 message_2 = "Bienvenidos al discord"
 print(message_2)
 

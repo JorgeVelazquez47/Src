@@ -45,47 +45,6 @@ print(age<21)
 print(age<=21)
 print(age>21)
 print(age>=21)
-
-
-"""
-
-    Ejercicios: 
-        
-        Pruebas Condicionales: Escribe una serie de pruebas condicionales.
-        Imprime una declaración que describa cada prueba y tu predicción 
-        para el resultado de cada prueba. Tu código debería verse algo así:
-        
-            car = 'bocho'
-            print("¿Es car == 'bocho'? Predigo que es True.")
-            print(car == 'bocho')
-            print("\n¿Es car == 'audi'? Predigo que es False.")
-            print(car == 'audi')
-        
-        Observa de cerca tus resultados y asegúrate de entender por qué 
-        cada línea se evalúa como True o False. Crea al menos 10 pruebas.
-        Haz que al menos 5 pruebas se evalúen como True y otras 5 se evalúen 
-        como False.
-        
-
-        Más Pruebas Condicionales: No tienes que limitar el número de pruebas
-        a 10. Si quieres intentar más comparaciones, escribe más pruebas y 
-        añádelas a tu script. Asegúrate de tener al menos un 
-        resultado True y un resultado False para cada uno de los siguientes 
-        casos:
-
-            - Pruebas de igualdad y desigualdad con strings.
-            - Pruebas usando la función lower().
-            - Pruebas numéricas que involucren igualdad y desigualdad, mayor 
-                que y menor que, mayor o igual que y menor o igual que.
-            - Pruebas usando la palabra clave and y la palabra clave or.
-            - Prueba si un elemento está en una lista.
-            - Prueba si un elemento no está en una lista.
-
-"""
-
-car == 'audi'
-print("")
-
 """
     Multiple Conditions
 """
@@ -127,6 +86,75 @@ if 'picadillo' in guisos:
 print("Éstos son los guisos")
 
 ## Differences between elif and if
+
+
+
+guisos = ['salsa verde', 'deshebrada']
+if 'picadillo' in guisos:
+    print("Hay Salsa verde")
+elif 'picadillo' in guisos:
+    print("Hay deshebrada")
+elif 'chicharron' in guisos:
+    print("Hay chicharron")  
+else:
+    print("No hay ningún guiso")  
+    
+
+# Empty List
+guisos = []
+if guisos:
+    print("Hay elementos")
+else:
+    print("No hay elementos")
+    
+
+# 
+guisos_disponibles = ['salsa verde', 'deshebrada', 
+                      'picadillo', 'huevo con chorizo']
+guisos_a_ordenar = ['chicharron', 'deshebrada', 'huevo con chorizo']
+print("¿Qué guiso desea ordenar?")
+for guiso in guisos_a_ordenar:
+    if guiso in guisos_disponibles:
+        print(f"Si tengo ese guiso: {guiso}")
+    else:
+        print(f"No tengo ese guiso: {guiso}")
+
+
+"""
+
+    Ejercicios: 
+        
+        Pruebas Condicionales: Escribe una serie de pruebas condicionales.
+        Imprime una declaración que describa cada prueba y tu predicción 
+        para el resultado de cada prueba. Tu código debería verse algo así:
+        
+            car = 'bocho'
+            print("¿Es car == 'bocho'? Predigo que es True.")
+            print(car == 'bocho')
+            print("\n¿Es car == 'audi'? Predigo que es False.")
+            print(car == 'audi')
+        
+        Observa de cerca tus resultados y asegúrate de entender por qué 
+        cada línea se evalúa como True o False. Crea al menos 10 pruebas.
+        Haz que al menos 5 pruebas se evalúen como True y otras 5 se evalúen 
+        como False.
+        
+
+        Más Pruebas Condicionales: No tienes que limitar el número de pruebas
+        a 10. Si quieres intentar más comparaciones, escribe más pruebas y 
+        añádelas a tu script. Asegúrate de tener al menos un 
+        resultado True y un resultado False para cada uno de los siguientes 
+        casos:
+
+            - Pruebas de igualdad y desigualdad con strings.
+            - Pruebas usando la función lower().
+            - Pruebas numéricas que involucren igualdad y desigualdad, mayor 
+                que y menor que, mayor o igual que y menor o igual que.
+            - Pruebas usando la palabra clave and y la palabra clave or.
+            - Prueba si un elemento está en una lista.
+            - Prueba si un elemento no está en una lista.
+
+"""
 
 """
 
@@ -193,38 +221,6 @@ print("Éstos son los guisos")
             "¡Realmente te gustan las fresas!"
 
 """
-
-guisos = ['salsa verde', 'deshebrada']
-if 'picadillo' in guisos:
-    print("Hay Salsa verde")
-elif 'picadillo' in guisos:
-    print("Hay deshebrada")
-elif 'chicharron' in guisos:
-    print("Hay chicharron")  
-else:
-    print("No hay ningún guiso")  
-    
-
-# Empty List
-guisos = []
-if guisos:
-    print("Hay elementos")
-else:
-    print("No hay elementos")
-    
-
-# 
-guisos_disponibles = ['salsa verde', 'deshebrada', 
-                      'picadillo', 'huevo con chorizo']
-guisos_a_ordenar = ['chicharron', 'deshebrada', 'huevo con chorizo']
-print("¿Qué guiso desea ordenar?")
-for guiso in guisos_a_ordenar:
-    if guiso in guisos_disponibles:
-        print(f"Si tengo ese guiso: {guiso}")
-    else:
-        print(f"No tengo ese guiso: {guiso}")
-
-
 """
 
     Ejercicios.

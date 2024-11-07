@@ -43,5 +43,3 @@ for letra in mensaje:
         print(letra, end="")
 
 
-
-
