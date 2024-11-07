@@ -311,6 +311,16 @@ else:
     print("Es un anciano.")
 
 print("---------------EJERCICIO---------------")
+frutas_favoritas = ['manzana', 'platano', 'sandia']
+
+if 'manzana' in frutas_favoritas:
+    print("Me gustan las manzanas")
+
+if 'platano' in frutas_favoritas:
+    print("me gustan los platanos!")
+
+if 'sandia' in frutas_favoritas:
+    print("me gusta la sandia!")
 
 """
 
