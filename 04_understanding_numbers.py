@@ -40,11 +40,13 @@ Almacenma tu numero favorito en una variable. Luego
 utilizando esta variable crea un mensaje que revele 
 cual es tu numero favorito finalmente imprime tu mensaje
 """
+print("---------------EJERCICIO---------------")
 print("EJERCICIO 1")
 print(4+4)
 print(10-2)
 print(4*2)
 print(64/8)
+print("------------------------------")
 
 print("EJERCICIO 2")
 numfav = "12"

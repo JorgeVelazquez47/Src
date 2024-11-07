@@ -53,6 +53,46 @@ print(squares)
 """
 squares_2 = [number**2 for number in range(1,11)]
 print(squares_2)
+## SLICING O SLICE
+players = ['charly', 'doria', 'jose maria', 'valente', 'puga']
+print(players[0:3]) 
+print(players[1:4])
+print(players[:4])
+print(players[2:])
+print(players[-3:])
+
+## Slicing en un for
+players = ['charly', 'doria', 'jose maria', 'valente', 'puga']
+print("Aquí se presentan los primeros 3 alumnos")
+for player in players[0:3]:
+    print(player)
+
+## Copia de listas
+my_food = ['chilaquiles', 'flatuas de desebrada', 'enfrijoladas']
+dorias_favorite_food = my_food[:]
+dorias_favorite_food_2 = list(my_food)
+dorias_favorite_food_3 = my_food.copy()
+my_food.append('sopes')
+print(my_food)
+print(dorias_favorite_food)
+
+
+## TUPLAS
+# Las tuplas son listas de elemntos que no cambian de tamaños. 
+# Las tuplas son listas inmutables
+# Se utilizan los () para definir una tupla.
+dimensions = (200, 500)
+
+print(dimensions)
+
+print(dimensions[0])
+print(dimensions[1])
+
+for dimension in dimensions:
+    print(dimension)
+    
+dimensions = (250, 500)
+print(dimensions)
 
 """
 
@@ -109,34 +149,6 @@ print("---------------EJERCICIO 7---------------")
 squares = [value**2 for value in range(1,21)]
 print(squares)
 print("---------------FIN---------------")
-
- 
-
-
-
-## SLICING O SLICE
-players = ['charly', 'doria', 'jose maria', 'valente', 'puga']
-print(players[0:3]) 
-print(players[1:4])
-print(players[:4])
-print(players[2:])
-print(players[-3:])
-
-## Slicing en un for
-players = ['charly', 'doria', 'jose maria', 'valente', 'puga']
-print("Aquí se presentan los primeros 3 alumnos")
-for player in players[0:3]:
-    print(player)
-
-## Copia de listas
-my_food = ['chilaquiles', 'flatuas de desebrada', 'enfrijoladas']
-dorias_favorite_food = my_food[:]
-dorias_favorite_food_2 = list(my_food)
-dorias_favorite_food_3 = my_food.copy()
-my_food.append('sopes')
-print(my_food)
-print(dorias_favorite_food)
-
 """
     Ejercicios: 
     
@@ -207,24 +219,6 @@ for pizza in pizzas:
 print("---------------")
 for pizza in friend_pizzas:
     print(f"Las pizzas favoritas de mi amigo son: {pizza}")
-## TUPLAS
-# Las tuplas son listas de elemntos que no cambian de tamaños. 
-# Las tuplas son listas inmutables
-# Se utilizan los () para definir una tupla.
-dimensions = (200, 500)
-
-print(dimensions)
-
-print(dimensions[0])
-print(dimensions[1])
-
-for dimension in dimensions:
-    print(dimension)
-    
-dimensions = (250, 500)
-print(dimensions)
-
-
 """
 
     Buffet: Un restaurante "estilo buffet" ofrece solo cinco alimentos 

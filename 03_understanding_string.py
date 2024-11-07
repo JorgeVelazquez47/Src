@@ -101,22 +101,29 @@ Guarda el nombre de la persona en una variable, agrega espacios
 
 """
 """1er Ejercicio"""
+print("---------------EJERCICIO---------------")
 print("EJERCICIO 1")
 full_name1 = "jorge velazquez"
 print("Hola!, " + full_name1 +  " " + "Bienvenid@")
 
 """2do Ejercicio"""
+print("------------------------------")
+
 print("EJERCICIO 2")
 print(full_name1.lower())
 print(full_name1.upper())
 print(full_name1.title())
 
 """3ro Ejercicio"""
+print("------------------------------")
+
 print("EJERCICIO 3")
 phrase = "Harrison Ford alguna vez dijo 'Que la fuerza te acompañe'"
 print(phrase)
 
 """4to Ejercicio"""
+print("------------------------------")
+
 print("EJERCICIO 4")
 famous_person = "Harrison Ford alguna vez dijo"
 phrase1 = "'Que la fuerza te acompañe'"
@@ -126,6 +133,8 @@ message3 = f"{famous_person}  {phrase1}"
 print(message3)
 
 """5to Ejercicio"""
+print("------------------------------")
+
 print("EJERCICIO 5")
 full_name2 = "  isis lopez     "
 print(full_name2)

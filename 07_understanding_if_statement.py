@@ -155,7 +155,55 @@ for guiso in guisos_a_ordenar:
             - Prueba si un elemento no está en una lista.
 
 """
-
+print("---------------EJERCICIO---------------")
+car = 'bocho'
+print("¿Es car == 'bocho'? Predigo que es False.")
+print(car == 'bocho')
+car = 'Audi'
+print("\n¿Es car == 'audi'? Predigo que es True.")
+print(car == 'audi')
+car = 'mustang'
+print("\n¿Es car == 'mustang'? Predigo que es False.")
+print(car == 'r8')
+car = 'r8'
+print("\n¿Es car == 'r8'? Predigo que es True.")
+print(car == 'r8')
+car = 'ferrari'
+print("¿Es car == '488 pista'? Predigo que es False.")
+print(car == 'ferrari')
+car = 'maseratti'
+print("\n¿Es car == 'maseratti'? Predigo que es True.")
+print(car == 'maseratti')
+car = 'mustang'
+print("\n¿Es car == 'mustang'? Predigo que es False.")
+print(car == 'r8')
+car = 'r8'
+print("\n¿Es car == 'r8'? Predigo que es True.")
+print(car == 'r8')
+car = 'rolls roys'
+print("\n¿Es car == 'Huracan'? Predigo que es False.")
+print(car == 'evo')
+car = 'evo'
+print("\n¿Es car == 'lamborghini evo'? Predigo que es True.")
+print(car == 'lamborghini')
+print("---------------EJERCICIO---------------")
+valor = 12
+print("Valor = 12")
+print("valor es igual a 11?")
+print(valor == 11)
+print("valor es menor a 20?")
+print(valor < 20)
+print("valor es mayor a 1?")
+print(valor > 11)
+print("valor es igual o menor a 20?")
+print(valor == 12)
+print("---------------EJERCICIO---------------")
+car = 'rolls roys'
+print("\n¿Es car == 'rolls roys'? Predigo que es False.")
+print(car.upper() == 'ROLLS ROYS')
+car = 'Lamborghini'
+print("\n¿Es car == 'lamborghini evo'? Predigo que es True.")
+print(car.upper() == 'Lamborghini')
 """
 
     Ejercicios: 
@@ -221,6 +269,46 @@ for guiso in guisos_a_ordenar:
             "¡Realmente te gustan las fresas!"
 
 """
+color_alien = "verde"
+print("---------------EJERCICIO---------------")
+
+if color_alien == 'verde':
+    print("Mataste un alien verde")
+    print("Ganaste 5 puntos")
+print("---------------EJERCICIO---------------")
+if color_alien == 'rojo':
+    print("Mataste un alien verde")
+    print("Ganaste 5 puntos")
+else:
+    print("Mataste un alien ")
+    print("Ganaste 10 puntos")
+print("---------------EJERCICIO---------------")
+if color_alien == 'rojo':
+    print("Mataste un alien verde")
+    print("Ganaste 5 puntos")
+elif color_alien == 'rojo':
+    print("Mataste un alien amarillo")
+    print("Ganaste 10 puntos")
+else:
+    print("Mataste un alien rojo")
+    print("Ganaste 15 puntos")
+
+
+
+print("---------------EJERCICIO---------------")
+edad = 18
+if edad < 2:
+    print("Es un bebe")
+elif edad < 4:
+    print("Es un niño pequeño.")
+elif edad < 13:
+    print("Es un niño.")
+elif edad < 20:
+    print("Es un adolescente.")
+elif edad < 65:
+    print("Es un adulto.")
+else:
+    print("Es un anciano.")
 """
 
     Ejercicios.
