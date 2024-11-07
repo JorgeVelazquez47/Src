@@ -309,6 +309,9 @@ elif edad < 65:
     print("Es un adulto.")
 else:
     print("Es un anciano.")
+
+print("---------------EJERCICIO---------------")
+
 """
 
     Ejercicios.
